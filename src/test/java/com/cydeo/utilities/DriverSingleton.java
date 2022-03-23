@@ -7,10 +7,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class Driver {
+public class DriverSingleton {
    /* //create a private constructor, so we are closing access to the object of this class from outside the class */
 
-    private Driver(){
+    private DriverSingleton(){
     }
     //We make WebDriver private, because we want to close access from outside the class.
     //We make it static because we will use it in a static method.

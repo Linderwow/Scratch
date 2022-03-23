@@ -6,11 +6,12 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        plugin = "html:target/cucmber-report.html",
         features = "src/test/resources/features",
         glue = "com/cydeo/step_definitions",
         monochrome = false,
         dryRun = false,
-        tags = "@tableTask"
+        tags = "@wip"
 )
 public class NewRunner {
 }
