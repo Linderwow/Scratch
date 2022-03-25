@@ -51,10 +51,10 @@ public class writeExcel {
         fileInputStream.close();
         outPutStream.close();
         try {
-            File file = new File("C:\\Users\\BitFenix\\IdeaProjects\\Sashkin\\Scratch\\SampleData.xlsx");
-            Desktop desktop = Desktop.getDesktop();
-            if (file.exists()) {
-                desktop.open(file);
+            File file = new File("C:\\Users\\BitFenix\\IdeaProjects\\Sashkin\\Scratch\\SampleData.xlsx");// file path
+            Desktop desktop = Desktop.getDesktop();//desktop function manipulates files by using different actions
+            if (file.exists()) {//if file exists
+                desktop.open(file);//opens desired file
             }
         }catch (Exception e){
             e.printStackTrace();
